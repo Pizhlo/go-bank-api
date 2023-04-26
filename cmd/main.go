@@ -14,9 +14,7 @@ func main() {
 	currencies, namesCodeMap := bank.GetCurrencies() // получаем список всех валют
 	curRates := bank.GetCurRates(dates, currencies)  // получаем курс всех валют за указанный период
 
-	average := internal.FindAverage(curRates)            // нашли среднее значение рубля
-	maxID, maxDate, maxVal := internal.FindMax(curRates) // нашли максимум
-	minID, minDate, minVal := internal.FindMin(curRates) // нашли минимум
+	minID, minDate, minVal, maxID, maxDate, maxVal, average := internal.FindMinMaxAverage(curRates)  // нашли максимум, минимум, среднее значение рубля
 
 	fmt.Printf("Максимальный курс валюты: %f P; название валюты: %s; дата: %s\n", maxVal, namesCodeMap[maxID], maxDate)
 	fmt.Printf("Минимальный курс валюты: %f P; название валюты: %s; дата: %s\n", minVal, namesCodeMap[minID], minDate)
