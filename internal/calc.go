@@ -97,20 +97,20 @@ func FindMinMaxAverage(courses []bank.CurrencyRates) (string, string, float64, s
 			}
 
 			if curValue / float64(v.Record[i].Nominal) < min {
-				min = curValue
+				min = curValue / float64(v.Record[i].Nominal)
 				minID = v.Record[i].Id
 				minDate = v.Record[i].Date
 				minValue = curValue
 			}
 
 			if curValue / float64(v.Record[i].Nominal) > max {
-				max = curValue
+				max = curValue / float64(v.Record[i].Nominal)
 				maxID = v.Record[i].Id
 				maxDate = v.Record[i].Date
 				maxValue = curValue
 			}
 
-			sum += curValue
+			sum += curValue / float64(v.Record[i].Nominal)
 			count++
 		}
 	}
