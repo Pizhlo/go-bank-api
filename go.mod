@@ -1,4 +1,4 @@
-module second_project
+module github.com/Pizhlo/go-bank-api
 
 go 1.20
 

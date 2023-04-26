@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	bank "second_project/bank"
+	bank "github.com/Pizhlo/go-bank-api/bank"
 )
 
 const (

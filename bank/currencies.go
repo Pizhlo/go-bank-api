@@ -6,7 +6,7 @@ import (
 	"log"
 	"strings"
 
-	internet "second_project/internet"
+	internet "github.com/Pizhlo/go-bank-api/internet"
 
 	"golang.org/x/net/html/charset"
 )

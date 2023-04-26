@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	bank "second_project/bank"
-	internal "second_project/internal"
+	bank "github.com/Pizhlo/go-bank-api/bank"
+	internal "github.com/Pizhlo/go-bank-api/internal"
 )
 
 func main() {
